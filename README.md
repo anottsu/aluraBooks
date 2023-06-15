@@ -1,2 +1,2 @@
 # aluraBooks
-Project developed in Alura class
+Project developed in Alura class where the goal is training and use mobile first response.
