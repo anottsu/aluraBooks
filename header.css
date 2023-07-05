@@ -77,7 +77,6 @@ span.container__imagem.container__imagem {
     animation-duration: .5s;
     animation-fill-mode: forwards;
 
-
 }
 
 @keyframes preencher {
@@ -95,12 +94,17 @@ span.container__imagem.container__imagem {
 }
 
 /*ANIMAÇÃO BALANÇAR CORAÇÃO*/
-input[type="checkbox"]:not(:checked)+label>svg {
-    animation: shake 2s linear, fill2 1s;
-    animation-fill-mode: forwards;
+.icone {
+    cursor: pointer;
 }
 
-@keyframes shake {
+#coracao:checked+label>svg {
+    animation: wiggle 2s linear, fill 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes wiggle {
 
     0%,
     7% {
@@ -133,9 +137,12 @@ input[type="checkbox"]:not(:checked)+label>svg {
     }
 }
 
-@keyframes fill2 {
+@keyframes fill {
     0% {
         fill: transparent;
     }
 
+    100% {
+        fill: #002F52;
+    }
 }
