@@ -69,3 +69,24 @@ span.container__imagem.container__imagem {
 .container__botao {
     display: none;
 }
+
+#coracao:checked+label>svg {
+    animation: preencher;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes preencher {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #002F52;
+    }
+}
+
+#coracao {
+    display: none
+}
