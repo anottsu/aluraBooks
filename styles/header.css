@@ -70,6 +70,8 @@ span.container__imagem.container__imagem {
     display: none;
 }
 
+/*ANIMAÇÃO PREENCHER CORAÇÃO*/
+
 #coracao:checked+label>svg {
     animation: preencher;
     animation-duration: .5s;
@@ -89,4 +91,103 @@ span.container__imagem.container__imagem {
 
 #coracao {
     display: none
+}
+
+/*ANIMAÇÃO BALANÇAR CORAÇÃO*/
+.icone {
+    cursor: pointer;
+}
+
+#coracao:checked+label>svg {
+    animation: wiggle 2s linear, fill 1s;
+    animation-fill-mode: forwards;
+
+}
+
+@keyframes wiggle {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes fill {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #002F52;
+    }
+}
+
+input[type="checkbox"]:not(:checked)+label>svg {
+    animation: shake 2s linear, fill2 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+
+    0%,
+    7% {
+        transform: rotateZ(0);
+    }
+
+    15% {
+        transform: rotateZ(-15deg);
+    }
+
+    20% {
+        transform: rotateZ(10deg);
+    }
+
+    25% {
+        transform: rotateZ(-10deg);
+    }
+
+    30% {
+        transform: rotateZ(6deg);
+    }
+
+    35% {
+        transform: rotateZ(-4deg);
+    }
+
+    40%,
+    100% {
+        transform: rotateZ(0);
+    }
+}
+
+@keyframes fill2 {
+    0% {
+        fill: transparent;
+    }
+
 }
