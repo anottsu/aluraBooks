@@ -44,7 +44,7 @@ span.container__imagem.container__imagem {
 
 .lista-menu__item,
 .lista-menu__titulo {
-    padding: 1em;
+    padding: 0.8em;
     background-color: var(--branco);
 
 }
@@ -66,128 +66,128 @@ span.container__imagem.container__imagem {
     text-transform: uppercase;
 }
 
-.container__botao {
-    display: none;
-}
+        .container__botao {
+            display: none;
+        }
 
-/*ANIMAÇÃO PREENCHER CORAÇÃO*/
+        /*ANIMAÇÃO PREENCHER CORAÇÃO*/
 
-#coracao:checked+label>svg {
-    animation: preencher;
-    animation-duration: .5s;
-    animation-fill-mode: forwards;
+        #coracao:checked+label>svg {
+            animation: preencher;
+            animation-duration: .5s;
+            animation-fill-mode: forwards;
 
-}
+        }
 
-@keyframes preencher {
-    0% {
-        fill: transparent;
-    }
+        @keyframes preencher {
+            0% {
+                fill: transparent;
+            }
 
-    100% {
-        fill: #002F52;
-    }
-}
+            100% {
+                fill: #002F52;
+            }
+        }
 
-#coracao {
-    display: none
-}
+        #coracao {
+            display: none
+        }
 
-/*ANIMAÇÃO BALANÇAR CORAÇÃO*/
-.icone {
-    cursor: pointer;
-}
+        /*ANIMAÇÃO BALANÇAR CORAÇÃO*/
+        .icone {
+            cursor: pointer;
+        }
 
-#coracao:checked+label>svg {
-    animation: wiggle 2s linear, fill 1s;
-    animation-fill-mode: forwards;
+        #coracao:checked+label>svg {
+            animation: wiggle 2s linear, fill 1s;
+            animation-fill-mode: forwards;
 
-}
+        }
 
-@keyframes wiggle {
+        @keyframes wiggle {
 
-    0%,
-    7% {
-        transform: rotateZ(0);
-    }
+            0%,
+            7% {
+                transform: rotateZ(0);
+            }
 
-    15% {
-        transform: rotateZ(-15deg);
-    }
+            15% {
+                transform: rotateZ(-15deg);
+            }
 
-    20% {
-        transform: rotateZ(10deg);
-    }
+            20% {
+                transform: rotateZ(10deg);
+            }
 
-    25% {
-        transform: rotateZ(-10deg);
-    }
+            25% {
+                transform: rotateZ(-10deg);
+            }
 
-    30% {
-        transform: rotateZ(6deg);
-    }
+            30% {
+                transform: rotateZ(6deg);
+            }
 
-    35% {
-        transform: rotateZ(-4deg);
-    }
+            35% {
+                transform: rotateZ(-4deg);
+            }
 
-    40%,
-    100% {
-        transform: rotateZ(0);
-    }
-}
+            40%,
+            100% {
+                transform: rotateZ(0);
+            }
+        }
 
-@keyframes fill {
-    0% {
-        fill: transparent;
-    }
+        @keyframes fill {
+            0% {
+                fill: transparent;
+            }
 
-    100% {
-        fill: #002F52;
-    }
-}
+            100% {
+                fill: #002F52;
+            }
+        }
 
-input[type="checkbox"]:not(:checked)+label>svg {
-    animation: shake 2s linear, fill2 1s;
-    animation-fill-mode: forwards;
-}
+        input[type="checkbox"]:not(:checked)+label>svg {
+            animation: shake 2s linear, fill2 1s;
+            animation-fill-mode: forwards;
+        }
 
-@keyframes shake {
+        @keyframes shake {
 
-    0%,
-    7% {
-        transform: rotateZ(0);
-    }
+            0%,
+            7% {
+                transform: rotateZ(0);
+            }
 
-    15% {
-        transform: rotateZ(-15deg);
-    }
+            15% {
+                transform: rotateZ(-15deg);
+            }
 
-    20% {
-        transform: rotateZ(10deg);
-    }
+            20% {
+                transform: rotateZ(10deg);
+            }
 
-    25% {
-        transform: rotateZ(-10deg);
-    }
+            25% {
+                transform: rotateZ(-10deg);
+            }
 
-    30% {
-        transform: rotateZ(6deg);
-    }
+            30% {
+                transform: rotateZ(6deg);
+            }
 
-    35% {
-        transform: rotateZ(-4deg);
-    }
+            35% {
+                transform: rotateZ(-4deg);
+            }
 
-    40%,
-    100% {
-        transform: rotateZ(0);
-    }
-}
+            40%,
+            100% {
+                transform: rotateZ(0);
+            }
+        }
 
-@keyframes fill2 {
-    0% {
-        fill: transparent;
-    }
+        @keyframes fill2 {
+            0% {
+                fill: transparent;
+            }
 
-}
+        }
