@@ -1,0 +1,23 @@
+.container {
+    background-color: var(--azul-degrade);
+}
+
+.titulo__its {
+    font-size: 25px;
+    font-family: var(--font-josefin);
+    font-weight: 700;
+    text-align: center;
+
+}
+
+.lista__its {
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item_its {
+    text-decoration: none;
+    padding: 0.60em;
+    margin: 1em 2em;
+}
